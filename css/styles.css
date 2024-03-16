@@ -147,7 +147,7 @@ img {
   height: 4px;
   width: 100%;
   left: 0;
-  bottom: 0;
+  bottom: -1;
 }
 
 .header-address-list {
@@ -185,7 +185,9 @@ img {
     url(../images/hero-bg-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   margin-top: 60px;
+  max-width: 1440px;
 }
 
 .hero-container {
@@ -250,6 +252,8 @@ img {
 
 .features-icon-box {
   display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   width: 264px;
@@ -353,7 +357,8 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-icon-link:hover {
+.team-icon-link:hover,
+.team-icon-link:focus {
   background-color: #404bbf;
 }
 
@@ -411,7 +416,7 @@ img {
   color: #f4f4fd;
   background-color: #4d5ae5;
   height: 100%;
-  padding: 40px 32px 164px;
+  padding: 40px 32px;
   display: flex;
   align-items: center;
   transform: translateY(100%);
@@ -450,6 +455,8 @@ img {
 
 .footer-content {
   display: flex;
+  align-items: baseline;
+  margin-right: 120px;
 }
 
 .footer-description {
@@ -477,9 +484,7 @@ img {
   color: #f4f4fd;
   max-width: 264px;
 }
-.footer-contacts {
-  margin-left: 120px;
-}
+
 .footer-contacts-text {
   font-weight: 500;
   font-size: 16px;
@@ -509,9 +514,10 @@ img {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-icon-link:hover {
+.footer-icon-link:hover,
+.footer-icon-link:focus {
   background-color: #31d0aa;
 }
 .footer-contact-icon {
-  fill: #fff;
+  fill: #f4f4fd;
 }
